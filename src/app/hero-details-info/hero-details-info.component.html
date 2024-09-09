@@ -1,0 +1,28 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+<h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;padding-top: 18px;" >Character Details: </h3>
+</div>
+<div style="padding-left: 780px;padding-top: 10px;" class="col-md-9">
+<button class="btn btn-light" routerLink="/home">HomePage</button>
+</div></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                                <div class="col-md-6">
+                                    <div class="box">
+                                        <p><b>Hero Name:</b>{{characterObj.name}}</p>
+                                        <p><b>Height:</b>{{characterObj.height}}</p>
+                                        <p><b>Weight/Mass:</b> {{characterObj.mass}}</p>
+                                        <p><b>Birth Year:</b> {{characterObj.birth_year}}</p>
+                                        <p><b>Gender:</b> {{characterObj.gender}}</p>
+                                        <p><b>HomeWorld:</b> {{characterObj.homeworld}}</p>
+                                        <p><b>Films:</b></p>
+                                        <ul *ngFor="let films of characterObj.films">
+                                            <li>{{films}}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>

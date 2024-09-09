@@ -1,0 +1,20 @@
+table{
+    width: 80%;
+}
+
+.favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: red;
+  }
+  .fa-heart {
+    color: red; /* Filled heart color */
+  }
+
+  .fa-heart-o {
+    color: black; /* Empty heart color */
+    font-size: 24px;
+  }
+  

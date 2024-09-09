@@ -1,0 +1,30 @@
+<div class="container-fluid">
+<div class="row">
+    <div class="col-md-10">
+<h2>My Favourites:</h2>
+</div>
+<div style="margin-top: 12px;" class="col-md-2">
+<button class="btn btn-light" routerLink="/home">Back to Home</button>
+</div>
+</div>
+
+    <div class="row">
+        <ng-container *ngIf=" result && result.length > 0; else noMarkedHeroes">
+            <div class="col-md-4" *ngFor="let data1 of result">
+                <div class="box">
+                    <p>Hero Name: {{data1.name}}</p>
+                    <p>Height: {{data1.height}}</p>
+                    <p>Weight/Mass: {{data1.mass}}</p>
+                </div>
+            </div>
+        </ng-container>
+        <ng-template #noMarkedHeroes>
+            <p style="font-size: large;padding-left: 20px;">No Favourites..</p>
+        </ng-template>
+
+    </div>
+
+
+   
+
+</div>
